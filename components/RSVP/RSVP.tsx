@@ -5,7 +5,7 @@ export default function RSVP() {
   
   const onSubmit = (data: any) => {
     const message = `Oi, confirmo presença para ${data.nome} com ${data.qtd} convidados!`;
-    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`);
+    window.open(`https://wa.me/5585998514551?text=${encodeURIComponent(message)}`);
   };
 
   return (

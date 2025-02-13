@@ -1,9 +1,14 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .welcome {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+    height: 100%;
 }
 
 .img-galho {
@@ -13,29 +18,12 @@
     margin-bottom: 1rem;
 }
 
-.img-nome{
-    width: 20%;
-    bottom: 44%;
-    right: 4%;
-    position: absolute;
-}
-
-.welcome-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
 
 .welcome-top p {
-    font-size: 1.4rem;
+    font-size: 17px;
     font-weight: 500;
     color: black;
     text-align: justify;
-    margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
     font-family: "Poppins", serif;
@@ -44,8 +32,15 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.116);
 }
 
+.welcome-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .welcome-title h1 {
-    font-size: 4rem;
+    font-size: 50px;
     font-weight: 700;
     color: #9b71e6;
     text-align: center;
@@ -53,21 +48,31 @@
     font-weight: 500;
     font-style: normal;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
-    margin-top: 2rem;
+}
+
+.welcome-title img {
+    width: 20%;
+    bottom: 34%;
+    right: -11%;
+    position: absolute;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.096));
+    transform: rotate(-8deg);
 }
 
 .btn-details {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 3rem;
+    position: relative;
 }
 
 .btn-details img {
     width: 28%;
     position: absolute;
-    bottom: 32%;
+    bottom: 77%;
     left: 25%;
+    z-index: 2;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.096));
 }
 
 .btn-details button {
@@ -77,20 +82,20 @@
     background-color: #9b71e6;
     border: none;
     padding: 1rem 2rem;
-    margin-top: 1rem;
     cursor: pointer;
     font-family: "Quicksand", serif;
     font-weight: 500;
     font-style: normal;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
     border-radius: 30px;
+    z-index: 1;
 }
 
 .welcome-content button:hover {
     background-color: #7f4fc9;
 }
 
-.img-footer{
+.img-footer {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -104,26 +109,9 @@
     right: 0;
 }
 
-@media screen and (max-height: 844px) {
-
-    .img-nome {
-        bottom: 43%;
-        right: 10%;
-    }
-
-
-    .welcome-title h1 {
-        font-size: 3rem;
-    }
-
-    .btn-details img {
-        position: absolute;
-        bottom: 28%;
-        left: 25%;
-    }
-
-    .btn-details button {
-        font-size: 1rem;
-        margin-top: 2rem;
+@media (min-height: 800px) and (max-height: 980px) {
+    .welcome-top p {
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 }

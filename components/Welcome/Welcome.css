@@ -3,18 +3,20 @@
     flex-direction: column;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .img-galho {
     width: 50%;
     top: 0;
     left: 0;
+    margin-bottom: 1rem;
 }
 
 .img-nome{
     width: 20%;
-    bottom: 58%;
-    right: 5%;
+    bottom: 44%;
+    right: 4%;
     position: absolute;
 }
 
@@ -28,21 +30,21 @@
     z-index: 1;
 }
 
-.welcome-content p {
-    font-size: 1.3rem;
+.welcome-top p {
+    font-size: 1.4rem;
     font-weight: 500;
     color: black;
     text-align: justify;
-    margin-top: -40%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.116);
 }
 
-.welcome-content h1 {
+.welcome-title h1 {
     font-size: 4rem;
     font-weight: 700;
     color: #9b71e6;
@@ -51,7 +53,7 @@
     font-weight: 500;
     font-style: normal;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .btn-details {
@@ -64,11 +66,11 @@
 .btn-details img {
     width: 28%;
     position: absolute;
-    bottom: 39%;
+    bottom: 32%;
     left: 25%;
 }
 
-.welcome-content button {
+.btn-details button {
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
@@ -89,14 +91,39 @@
 }
 
 .img-footer{
+    display: flex;
     position: absolute;
     bottom: 0;
-    left: -15%;
     width: 100%;
 }
 
 .img-footer img {
-    width: 130%;
+    width: 100%;
+    height: 100%;
     bottom: 0;
     right: 0;
+}
+
+@media screen and (max-height: 844px) {
+
+    .img-nome {
+        bottom: 43%;
+        right: 10%;
+    }
+
+
+    .welcome-title h1 {
+        font-size: 3rem;
+    }
+
+    .btn-details img {
+        position: absolute;
+        bottom: 28%;
+        left: 25%;
+    }
+
+    .btn-details button {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
 }

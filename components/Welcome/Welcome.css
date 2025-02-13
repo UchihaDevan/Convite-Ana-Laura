@@ -1,0 +1,102 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    position: relative;
+}
+
+.img-galho {
+    width: 50%;
+    top: 0;
+    left: 0;
+}
+
+.img-nome{
+    width: 20%;
+    bottom: 58%;
+    right: 5%;
+    position: absolute;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-content p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+    margin-top: -40%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.116);
+}
+
+.welcome-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #9b71e6;
+    text-align: center;
+    font-family: "Pacifico", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    margin-top: 1rem;
+}
+
+.btn-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.btn-details img {
+    width: 28%;
+    position: absolute;
+    bottom: 39%;
+    left: 25%;
+}
+
+.welcome-content button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background-color: #9b71e6;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    border-radius: 30px;
+}
+
+.welcome-content button:hover {
+    background-color: #7f4fc9;
+}
+
+.img-footer{
+    position: absolute;
+    bottom: 0;
+    left: -15%;
+    width: 100%;
+}
+
+.img-footer img {
+    width: 130%;
+    bottom: 0;
+    right: 0;
+}

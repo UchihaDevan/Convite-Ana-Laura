@@ -1,4 +1,5 @@
 import './Welcome.css';
+import { Link } from "react-router-dom";
 
 
 export default function Welcome() {
@@ -15,7 +16,7 @@ export default function Welcome() {
         </div>
         <div className='btn-details'>
           <img src="/images/passaro-botao.png" alt="" />
-          <button>VER DETALHES DA FESTA</button>
+          <button><Link to="/details"> VER DETALHES DA FESTA</Link></button>
         </div>
         <div className='img-footer'>
           <img src="/images/footer.png" alt="" />

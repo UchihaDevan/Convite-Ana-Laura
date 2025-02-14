@@ -5,3 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #9b71e6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.151);
+}

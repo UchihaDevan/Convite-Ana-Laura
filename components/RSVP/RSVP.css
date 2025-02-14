@@ -1,0 +1,68 @@
+.rsvp-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #9b71e6, #B7DFF2);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    margin: 20px auto;
+  }
+  
+  .rsvp-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .rsvp-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  .rsvp-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(43, 80, 112, 0.5);
+  }
+  
+  .rsvp-button {
+    background: #9b71e6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rsvp-button:hover {
+    background: #774ebd;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .rsvp-button:active {
+    animation: pulse 0.3s ease;
+  }
+  

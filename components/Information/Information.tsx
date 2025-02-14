@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import "./Information.css"; // Importa o CSS personalizado
 
 export default function Information() {
-  const [date, setDate] = useState(new Date(2025, 6, 19));
+  const [date] = useState(new Date(2025, 6, 19));
 
   return (
     <section>

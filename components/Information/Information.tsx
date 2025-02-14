@@ -13,7 +13,7 @@ export default function Information() {
 
         <div className="calendar-container">
           <h3>📆 Veja a data no calendário:</h3>
-          <Calendar onChange={''} value={date} />
+          <Calendar value={date} />
         </div>
 
         <div className="information-calendar">
